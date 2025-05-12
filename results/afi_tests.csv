@@ -1,0 +1,8 @@
+infection,.y.,n,statistic,df,p,method,p.adj,p.adj.signif
+covid,cases,2,1,1,0.317,Kruskal-Wallis,1,ns
+lrti,cases,2,1,1,0.317,Kruskal-Wallis,1,ns
+malaria,cases,2,1,1,0.317,Kruskal-Wallis,1,ns
+sepsis,cases,2,1,1,0.317,Kruskal-Wallis,1,ns
+typhoid,cases,2,1,1,0.317,Kruskal-Wallis,1,ns
+urti,cases,2,1,1,0.317,Kruskal-Wallis,1,ns
+uti,cases,2,1,1,0.317,Kruskal-Wallis,1,ns

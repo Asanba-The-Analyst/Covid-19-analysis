@@ -1,7 +1,7 @@
 # Assuming we have geographic coordinates or region data
 # First, summarize data by region
 region_summary <- clean_data %>%
-  group_by(comm)) %>%  # comm = community/region variable
+  group_by(comm) %>%  # comm = community/region variable
   summarise(
     covid_cases = sum(pcr_results == 1, na.rm = TRUE),
     malaria_cases = sum(malaria == 1, na.rm = TRUE),
