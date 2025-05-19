@@ -12,9 +12,11 @@ KHR$site <- 1
 NHR$site <- 2
 DHR$site <- 3
 
-table(duplicated(KHR))
-table(duplicated(NHR))
-table(duplicated(DHR))
+DHR$pcr_results[DHR$pcr_results == 2] <- 0
+
+table(duplicated(KHR$enrollmnt_id))
+table(duplicated(NHR$enrollmnt_id))
+table(duplicated(DHR$enrollmnt_id))
 
 
 data<-rbind(KHR,NHR,DHR)
@@ -34,4 +36,5 @@ sum(is.na(data$compno_avail)) # all missing
 sum(is.na(data$IgG)) # all missing- they are fro DHR-Dodowa
 sum(is.na(data$IgM)) # all missing-they are fro DHR-Dodowa
 
+table(data$pcr_results)
 
